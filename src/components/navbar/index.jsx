@@ -24,7 +24,7 @@ const Navbar = () => {
         <Link to={"/"} className="cursor-pointer">
           <img src="/assets/icons/logo-nav.png" alt="" />
         </Link>
-        <div className="flex md:flex-row gap-4">
+        <div className="hidden md:flex md:flex-row gap-4">
           <Link to={"/"} >Beranda</Link>
           <Link to={"/tentang"} >Tentang</Link>
           <Link to={"/galeri"} >Galeri</Link>

@@ -1,3 +1,13 @@
+import Hero from "./Hero";
+import Peta from "./Peta";
+import Profil from "./Profil";
+
 export default function Home() {
-  return <></>;
+  return (
+    <>
+      <Hero />
+      <Peta />
+      <Profil />
+    </>
+  );
 }
