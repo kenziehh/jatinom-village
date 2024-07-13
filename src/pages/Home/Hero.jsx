@@ -2,8 +2,14 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <section className="bg-dark-green min-h-screen pb-10 pt-[10vh] md:pt-[20vh] md:pb-20">
-      <div className="container flex flex-col-reverse gap-12 md:flex-row md:justify-between items-center">
+    <section className="bg-dark-green min-h-screen pb-10 pt-[10vh] md:pt-[20vh] md:pb-20 relative -z-10">
+      <img
+        src="/assets/icons/Spark 07.png"
+        alt=""
+        className="absolute -z-20 bottom-8"
+      />
+
+      <div className="container flex flex-col-reverse gap-12 md:flex-row md:justify-between items-center z-0">
         <div className="flex flex-col items-center md:items-start gap-8 md:gap-24">
           <div className="flex flex-col gap-4 md:gap-8 text-center md:text-start">
             <h1 className="text-4xl md:text-5xl xl:text-6xl text-white font-semibold">
@@ -24,6 +30,11 @@ const Hero = () => {
           </div>
         </div>
         <div className="">
+          <img
+            src="/assets/icons/spark-orange.svg"
+            alt=""
+            className="absolute -z-20 lg:-z-0 right-0 top-0"
+          />
           <img
             src="https://placehold.co/600x400"
             alt=""
