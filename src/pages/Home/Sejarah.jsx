@@ -16,7 +16,7 @@ const Sejarah = () => {
         </p>
         <div>
           <img
-            src="https://placehold.co/600x400"
+            src="/assets/images/kantor.jpeg"
             alt=""
             className="rounded-2xl"
           />

@@ -36,9 +36,9 @@ const Hero = () => {
             className="absolute -z-20 lg:-z-0 right-0 top-0"
           />
           <img
-            src="https://placehold.co/600x400"
+            src="/assets/images/gapura.jpeg"
             alt=""
-            className="rounded-2xl"
+            className="rounded-2xl "
           />
         </div>
       </div>
