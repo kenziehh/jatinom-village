@@ -18,7 +18,7 @@ const Navbar = () => {
     <nav
       className={`${
         isScrolled ? "backdrop-blur-md" : ""
-      } sticky left-0 top-0 z-[99999999] h-fit bg-white flex justify-between`}
+      } sticky left-0 top-0 z-[99999999] h-fit bg-white flex justify-between drop-shadow-2xl`}
     >
       <div className="flex flex-wrap items-center justify-between container py-4">
         <Link to={"/"} className="cursor-pointer">
