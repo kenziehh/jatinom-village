@@ -24,10 +24,10 @@ const Footer = () => {
                 Beranda
               </Link>
               <Link to={"/tentang"} className="opacity-80">
-                Tentang
+                Tentang Desa
               </Link>
-              <Link to={"/galeri"} className="opacity-80">
-                Galeri
+              <Link to={"/umkm"} className="opacity-80">
+                UMKM
               </Link>
             </div>
           </div>
