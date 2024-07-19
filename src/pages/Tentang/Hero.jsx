@@ -25,7 +25,7 @@ const Hero = () => {
   return (
     <div className="flex flex-col w-full">
       <div
-        className='flex flex-col relative justify-center items-center gap-5 w-full min-h-screen bg-[url("/assets/images/sawah.svg")] bg-fixed bg-cover bg-no-repeat'
+        className='flex flex-col relative justify-center items-center gap-5 w-full min-h-screen bg-[url("/assets/images/SunsetFieldCropTint.svg")] bg-fixed bg-cover bg-no-repeat'
         ref={containerRef}
       >
         <div

@@ -2,7 +2,7 @@ import React from "react";
 
 const Kades = () => {
   return (
-    <div className="h-auto w-full flex flex-row justify-center items-center gap-20 bg-dark-green text-white px-20 py-36">
+    <div className="h-auto w-full flex flex-row justify-center items-center gap-20 bg-dark-green text-white px-24 pt-36">
       <div className="w-1/4 flex justify-end">
         <img className="" src="" alt="kades" />
       </div>
