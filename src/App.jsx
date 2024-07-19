@@ -3,22 +3,25 @@ import MainLayout from "./layouts/MainLayout";
 import Home from "./pages/Home";
 import Tentang from "./pages/Tentang";
 import UMKM from "./pages/UMKM";
+import { HelmetProvider } from "react-helmet-async";
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route element={<MainLayout />}>
-          <Route path="/" element={<Home />} />
-          <Route path="/tentang">
-            <Route index element={<Tentang />} />
+    <HelmetProvider>
+      <BrowserRouter>
+        <Routes>
+          <Route element={<MainLayout />}>
+            <Route path="/" element={<Home />} />
+            <Route path="/tentang">
+              <Route index element={<Tentang />} />
+            </Route>
+            <Route path="/umkm">
+              <Route index element={<UMKM />} />
+            </Route>
           </Route>
-          <Route path="/umkm">
-            <Route index element={<UMKM />} />
-          </Route>
-        </Route>
-      </Routes>
-    </BrowserRouter>
+        </Routes>
+      </BrowserRouter>
+    </HelmetProvider>
   );
 }
 
