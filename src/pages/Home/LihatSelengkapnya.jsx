@@ -3,7 +3,7 @@ import SeeDetailCard from "../../components/card/SeeDetailCard";
 
 const LihatSelengkapnya = () => {
   return (
-    <section className="bg-white min-h-screen container py-10 md:py-20">
+    <section className="bg-white container py-10 md:py-20">
       <h2 className="font-semibold text-3xl md:text-5xl text-center ">
         Yuk Jelajahi Desa Jatinom Lebih Lanjut!
       </h2>
