@@ -1,7 +1,7 @@
 import Hero from "./Hero";
+import LihatSelengkapnya from "./LihatSelengkapnya";
 import Peta from "./Peta";
 import Profil from "./Profil";
-import Sejarah from "./Sejarah";
 
 export default function Home() {
   return (
@@ -9,7 +9,7 @@ export default function Home() {
       <Hero />
       <Peta />
       <Profil />
-      <Sejarah />
+      <LihatSelengkapnya />
     </>
   );
 }
