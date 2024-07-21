@@ -2,7 +2,7 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <section className="pb-10 pt-[10vh] md:pt-[20vh] md:pb-20 min-h-screen">
+    <section className="pb-10 pt-[10vh] md:pt-[20vh] md:pb-20">
       <div className="container flex flex-col gap-6 md:gap-14 lg:gap-32">
         <div className="flex gap-8 lg:gap-20 xl:gap-32 flex-col md:flex-row md:items-center">
           <div className="space-y-4 lg:ml-auto flex flex-col gap-6">
