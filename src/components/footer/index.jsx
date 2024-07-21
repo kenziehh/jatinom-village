@@ -20,13 +20,13 @@ const Footer = () => {
           <div className="flex flex-col gap-6 md:gap-12 text-white justify-center md:justify-start items-center md:items-start">
             <div className="font-semibold text-2xl">Navigasi</div>
             <div className="flex flex-col gap-1.5 justify-center md:justify-start items-center md:items-start">
-              <Link to={"/"} className="opacity-80">
+              <Link to={"/"} className="opacity-80 font-normal hover:font-bold hover:underline transition-all duration-100">
                 Beranda
               </Link>
-              <Link to={"/tentang"} className="opacity-80">
+              <Link to={"/tentang"} className="opacity-80 font-normal hover:font-bold hover:underline transition-all duration-100">
                 Tentang Desa
               </Link>
-              <Link to={"/umkm"} className="opacity-80">
+              <Link to={"/umkm"} className="opacity-80 font-normal hover:font-bold hover:underline transition-all duration-100">
                 UMKM
               </Link>
             </div>
