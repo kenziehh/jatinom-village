@@ -13,6 +13,7 @@ export default function UMKM() {
           content="Desa Jatinom dikenal sebagai Desa UMKM karena memiliki UMKM yang
               unik dan beragam. Jangan sampai kelewatan!"
         />
+        <link rel="canonical" href="/umkm" />
       </Helmet>
       <Hero />
       <Pengertian />

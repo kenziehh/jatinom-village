@@ -4,6 +4,7 @@ import wave from "../../../public/assets/images/wave.svg";
 const Hero = () => {
   const containerRef = useRef(null);
   const [isHovered, setIsHovered] = useState(false);
+  const [strokeWidth, setStrokeWidth] = useState("2px");
 
   useEffect(() => {
     const handleScroll = () => {
@@ -22,16 +23,39 @@ const Hero = () => {
     };
   }, []);
 
+  useEffect(() => {
+    const updateStrokeWidth = () => {
+      if (window.innerWidth < 640) {
+        setStrokeWidth("1px"); // Small screens
+      } else if (window.innerWidth < 768) {
+        setStrokeWidth("2px"); // Medium screens
+      } else if (window.innerWidth < 1024) {
+        setStrokeWidth("3px"); // Large screens
+      } else {
+        setStrokeWidth("4px"); // Extra-large screens
+      }
+    };
+
+    // Initial stroke width setup
+    updateStrokeWidth();
+
+    // Update stroke width on window resize
+    window.addEventListener("resize", updateStrokeWidth);
+
+    // Clean up event listener
+    return () => window.removeEventListener("resize", updateStrokeWidth);
+  }, []);
+
   return (
     <div className="flex flex-col w-full">
       <div
-        className='flex flex-col relative justify-center items-center gap-5 w-full min-h-screen bg-[url("/assets/images/sawah.svg")] bg-fixed bg-cover bg-no-repeat'
+        className='flex flex-col relative justify-center items-center gap-5 w-full min-h-screen bg-[url("/assets/images/SunsetFieldCropTint.svg")] bg-fixed bg-cover bg-no-repeat'
         ref={containerRef}
       >
         <div
-          className="text-9xl font-black border-[5px] border-white px-8 py-2 transition-all duration-500 ease-in-out"
+          className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-black border-2 sm:border-3 md:border-4 lg:border-5 border-white px-4 sm:px-6 md:px-8 lg:px-10 py-1 sm:py-2 md:py-3 lg:py-4 transition-all duration-500 ease-in-out"
           style={{
-            WebkitTextStrokeWidth: "5px",
+            WebkitTextStrokeWidth: strokeWidth,
             WebkitTextStrokeColor: "white",
             color: isHovered ? "white" : "transparent",
           }}
