@@ -1,6 +1,7 @@
 import { Helmet } from "react-helmet-async";
 import Hero from "./Hero";
 import Pengertian from "./Pengertian";
+import ListUMKM from "./ListUMKM";
 
 export default function UMKM() {
   return (
@@ -16,6 +17,7 @@ export default function UMKM() {
       </Helmet>
       <Hero />
       <Pengertian />
+      <ListUMKM />
     </>
   );
 }
