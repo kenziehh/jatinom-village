@@ -2,21 +2,34 @@ import React from "react";
 
 const Fakta = () => {
   return (
-    <div className="flex flex-col relative justify-center items-center px-6 md:px-12 lg:px-24 py-10 md:py-16 lg:py-20">
-      <div
-        className="text-4xl md:text-5xl lg:text-7xl font-black text-dark-green text-center"
-        // style={{
-        //   WebkitTextStrokeWidth: "2px",
-        //   WebkitTextStrokeColor: "#022C25",
-        //   color: "transparent",
-        // }}
-      >
+    <div className="flex flex-col relative justify-center items-center px-6 md:px-12 lg:px-24 py-10 md:py-16 lg:py-20 text-dark-green bg-white">
+      <div className="text-4xl md:text-5xl lg:text-7xl font-black text-center mb-4 md:mb-8">
         FAKTA
       </div>
-      <div className="flex flex-col justify-center items-center gap-4 md:gap-5 mt-4 md:mt-8 text-center">
-        <div className="text-base md:text-lg lg:text-xl">
-          Ini Fakta
+      <div className="flex flex-col justify-center items-center gap-4 md:gap-5">
+        <div className="text-base md:text-lg lg:text-xl text-center mb-4">
+          Berikut adalah beberapa fakta menarik tentang Desa Jatinom:
         </div>
+        <ol className="list-decimal list-inside text-left text-base md:text-lg lg:text-xl w-full max-w-4xl">
+          <li className="mb-4">
+            <strong>Desa UMKM:</strong> Desa Jatinom dikenal sebagai desa dengan banyak usaha mikro, kecil, dan menengah (UMKM) yang berkontribusi pada ekonomi lokal.
+          </li>
+          <li className="mb-4">
+            <strong>Tempat Penampungan Terbesar:</strong> Desa ini memiliki tempat penampungan terbesar di kawasan Kanigoro, yang memudahkan distribusi dan penyimpanan barang.
+          </li>
+          <li className="mb-4">
+            <strong>Kedekatan dengan Kota:</strong> Desa Jatinom terletak dekat dengan kota, yang memudahkan aksesibilitas dan mendukung pertumbuhan ekonomi lokal.
+          </li>
+          <li className="mb-4">
+            <strong>Infrastruktur Jalan:</strong> Desa Jatinom memiliki infrastruktur jalan yang baik, memudahkan mobilitas warga dan akses ke fasilitas umum.
+          </li>
+          <li className="mb-4">
+            <strong>Potensi Pertanian:</strong> Desa ini dikenal dengan potensi pertanian yang tinggi, dengan lahan subur yang mendukung berbagai jenis tanaman.
+          </li>
+          <li className="mb-4">
+            <strong>Kegiatan Sosial:</strong> Desa Jatinom rutin mengadakan berbagai kegiatan sosial dan budaya yang melibatkan seluruh masyarakat, memperkuat rasa kebersamaan.
+          </li>
+        </ol>
       </div>
     </div>
   );
