@@ -67,12 +67,12 @@ const Hero = () => {
         </div>
 
         <svg
-          width="1440"
+          width="200"
           height="82"
           viewBox="0 0 1440 82"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          className="absolute w-[100vw] md:w-full h-[10vh] -bottom-[1vh]"
+          className="absolute w-full h-[10vh] -bottom-[1vh]"
           preserveAspectRatio="none"
         >
           <path
