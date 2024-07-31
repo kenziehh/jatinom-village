@@ -10,7 +10,7 @@ const Potensi = () => {
       <div className="flex flex-col justify-center items-center gap-4 md:gap-5">
         <div className="text-base md:text-lg lg:text-xl text-center mb-4">
           Berikut adalah beberapa potensi yang dimiliki oleh Desa Jatinom:
-        </div>
+        </div>    
         <div className="grid grid-cols- md:grid-cols-2 xl:grid-cols-3 gap-10 items-stretch mt-8">
           <PotensiCard
             title={"Peternakan"}
