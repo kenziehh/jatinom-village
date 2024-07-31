@@ -36,9 +36,9 @@ const Hero = () => {
             className="absolute -z-20 lg:-z-0 right-0 top-0"
           />
           <img
-            src="/assets/images/gapura.jpeg"
+            src="/assets/images/gapura.jpg"
             alt=""
-            className="rounded-2xl "
+            className="rounded-2xl w-full md:max-w-[700px] max-h-[500px]"
           />
         </div>
       </div>
