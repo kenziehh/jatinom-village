@@ -6,7 +6,7 @@ import { useState } from "react";
 import ContactModal from "../components/modal/contact";
 
 export default function MainLayout() {
-  const [isModalOpen, setIsModalOpen] = useState(true);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const handleModal = () => {
     console.log("Modal State:", isModalOpen);
