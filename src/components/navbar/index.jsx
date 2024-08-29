@@ -2,8 +2,9 @@ import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { FaBars } from "react-icons/fa6";
 import { RxCross1 } from "react-icons/rx";
+import ContactModal from "../modal/contact";
 
-const Navbar = () => {
+const Navbar = ({ onClick }) => {
   const [isScrolled, setIsScrolled] = useState(false);
   const location = useLocation();
 
@@ -27,11 +28,12 @@ const Navbar = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
   return (
     <nav
       className={`${
         isScrolled ? "backdrop-blur-md" : ""
-      } sticky left-0 top-0 z-[99999999] h-fit bg-white flex justify-between drop-shadow-2xl px-6 md:px-12 lg:px-24`}
+      } sticky z-[999] h-fit bg-white flex justify-between drop-shadow-2xl px-6 md:px-12 lg:px-24`}
     >
       <div className="flex flex-wrap items-center justify-between container py-4">
         <Link to={"/"} className="cursor-pointer">
@@ -110,7 +112,10 @@ const Navbar = () => {
               </Link>
             </li> */}
           </ul>
-          <button className="bg-dark-green rounded-[20px] text-white py-3 px-4">
+          <button
+            className="bg-dark-green rounded-[20px] text-white py-3 px-4"
+            onClick={onClick}
+          >
             Kontak Kami
           </button>
         </div>
