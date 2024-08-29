@@ -1,13 +1,11 @@
 import React from "react";
+import vector from "../../assets/vector-home.png";
+import vector2 from "../../assets/spark-orange.svg";
 
 const Hero = () => {
   return (
     <section className="bg-dark-green min-h-screen pb-10 pt-[10vh] md:pt-[20vh] md:pb-20 relative -z-10">
-      <img
-        src="/assets/icons/Spark 07.png"
-        alt=""
-        className="absolute -z-20 bottom-8"
-      />
+      <img src={vector} alt="" className="absolute -z-20 bottom-8" />
 
       <div className="container flex flex-col-reverse gap-12 md:flex-row md:justify-between items-center z-0">
         <div className="flex flex-col items-center md:items-start gap-8 md:gap-24">
@@ -31,12 +29,12 @@ const Hero = () => {
         </div>
         <div className="">
           <img
-            src="/assets/icons/spark-orange.svg"
+            src={vector2}
             alt=""
             className="absolute -z-20 lg:-z-0 right-0 top-0"
           />
           <img
-            src="/assets/images/gapura.jpg"
+            src={"/assets/images/gapura.jpg"}
             alt=""
             className="rounded-2xl w-full md:max-w-[700px] max-h-[500px]"
           />
